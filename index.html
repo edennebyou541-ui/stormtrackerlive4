@@ -5,10 +5,9 @@
 </head>
 
 
-</body>
 <body><h1>🌪️ StormTracker Live</h1>
 
-</body><h2><span id="greeting"></span></h2><script>
+<h2><span id="greeting"></span></h2><script>
 function updateGreeting() {
     const hour = new Date().getHours();
 
@@ -25,11 +24,12 @@ function updateGreeting() {
             "🌆 Good Evening!";
     }
 }
+</script>
 
 updateGreeting();
-</script><button onclick="toggleDarkMode()">
+<script><button onclick="toggleDarkMode()">
 🌙 Toggle Dark Mode
-</button><script>
+</button>
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 }
@@ -54,13 +54,13 @@ function toggleDarkMode() {
 </button>
 <img src="image.png"><ul>
 <a href="https://weather.gov">National Weather Service</a>
-<ul>
+</ul>
   <li>Tornado Warnings</li>
   <li>Thunderstorm Warnings</li>
 </ul><button onclick="alert('Hello!')">Click Me</button><p style="color:red;">🌪️ Tornado Warning</p>
 <p style="color:gold;">⚡ Severe Thunderstorm Warning</p>
 <p style="color:cyan;">🌊 Flood Warning</p>
-<p style="color:gray;">🌫️ Fog Advisory</p><p>
+<p style="color:gray;">🌫️ Fog Advisory</p>
     <p>🕒 Time: <span id="time"></span></p><script>
 function updateTime() {
     const now = new Date();
@@ -73,8 +73,9 @@ updateTime();
 
 // Update every second
 setInterval(updateTime, 1000);
-</script><h3>📅 Date</h3>
-<p><span id="date"></span></p><script>
+ </script><h3>📅 Date</h3>
+<p><span id="date"></span></p>
+    <script>
 function updateDate() {
     const now = new Date();
 
@@ -89,6 +90,7 @@ function updateDate() {
 
 // Show the date immediately
 updateDate();
+    </script>
 <h3><span id="greeting"></span></h3><h2>🗺️ Radar Map</h2>
 <h3> Location</h3>
 <p><span id="location">Loading...</span></p><script>
@@ -124,3 +126,6 @@ src="https://embed.windy.com/embed2.html?lat=38.80&lon=-77.05&zoom=7&level=surfa
 width="800"
 height="500"
 frameborder="0">
+</iframe>
+</body>
+</html>
